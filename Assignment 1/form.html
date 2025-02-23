@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for AltSchool Africa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .left-section {
+            width: 50%;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .left-section img {
+            width: 100%;
+        }
+        .left-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .right-section {
+            width: 50%;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .form-group {
+            width: 48%;
+        }
+        .full-width {
+            width: 100%;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input::placeholder {
+            color: gray;
+        }
+        button {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .signup-link {
+            text-align: right;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .signup-link a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 30px;
+            color: gray;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .footer-icons {
+            margin-top: 10px;
+        }
+        .footer-icons a {
+            margin: 0 5px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="Asset/Altschool Logo.png" alt="AltSchool Signup Illustration">
+            <h2>Learn highly sought after skills without hassle.</h2>
+        </div>
+        <div class="right-section">
+            <div class="signup-link">
+                Already an AltScholar? <a href="#">Sign In!</a>
+            </div>
+            <h2>Signup</h2>
+            <p>Take the next steps to apply at AltSchool Africa</p>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="full-width">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="full-width">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="full-width">
+                    <label for="hear-about">How did you hear about us?</label>
+                    <input type="text" id="hear-about" name="hear-about" placeholder="Optional: Let us know how you found us">
+                </div>
+                <div>
+<p>By clicking continue, I agree to <a href="https://portal.altschoolafrica.com/auth/signin?callbackUrl=%2F" target="_blank">Terms of Use</a> and acknowledge that I have read the <a href="https://portal.altschoolafrica.com/auth/signin?callbackUrl=%2F"target="_blank"> Privacy Policy.</a></p>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>2025 © AltSchool Africa. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="#">🌐</a>
+            <a href="#">📷</a>
+            <a href="#">📘</a>
+            <a href="#">🔗</a>
+        </div>
+    </footer>
+</body>
+</html>
